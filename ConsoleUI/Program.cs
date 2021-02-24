@@ -1,6 +1,5 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
 using System;
 
 namespace ConsoleUI
@@ -43,10 +42,7 @@ namespace ConsoleUI
                 Console.WriteLine(result.Message);
             }
 
-            foreach (var product in productManager.GetProductDetails().Data)
-            {
-                Console.WriteLine(product.ProductName+ "/" + product.CategoryName);
-            }
+           
         }
     }
 }

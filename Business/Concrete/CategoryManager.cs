@@ -22,10 +22,10 @@ namespace Business.Concrete
             return _categoryDal.GetAll();
         }
 
-         //Select * from Categories where CategoryId= 3
+        //Select * from Categories where CategoryId= 3
         public Category GetById(int categoryId)
         {
-            return _categoryDal.Get(c => c.CategoryId == categoryId);
+            return _categoryDal.Get(c=>c.CategoryId == categoryId);
 
         }
     }

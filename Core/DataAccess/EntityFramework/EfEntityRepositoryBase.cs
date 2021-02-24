@@ -41,16 +41,7 @@ namespace Core.DataAccess.EntityFramework
             }
         }
 
-        public TEntity Get()
-        {
-            throw new NotImplementedException();
-        }
-
-        public TEntity Get(object p)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             using (TContext context = new TContext())
